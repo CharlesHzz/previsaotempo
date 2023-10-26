@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+body {
+    background: rgb(2, 0, 36);
+    /*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 114, 9, 1) 35%, rgba(0, 212, 255, 1) 100%);*/
+    background-color: #87CEEB;
+}
+
+
+.card {
+    max-width: 650px;
+    height: 450px;
+    margin: 70px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: rgba(88, 88, 88, 0.41);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(88, 88, 88, 0.3);
+
+}
+#erro{
+    max-width: 500px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: none;
+    transition: 2.5s;
+    line-height: 1;
+    transform: translateY(18px);
+}
+
+.searchBox {
+    display: flex;
+    max-width: 260px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+    margin: 35px auto -65px;
+}
+
+.searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/*hover effect*/
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.searchInput {
+    margin: auto;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+}
+
+
+
+
+
+
+
+.headCard {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+    color: #fff;
+}
+
+.linha {
+    width: 400px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #000080;
+}
+
+.atualData {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#data{
+    font-size: 20px;
+    color: #fff;
+}
+#hora{
+    font-size: 46px;
+    color: #fff;
+}
+
+.divisao {
+    width: 1px;
+    height: 33px;
+    background-color: #000080;
+}
+
+.previsao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    display: none;
+
+    transition: 2.5s;
+    line-height: 1;
+    transform: translateY(18px);
+    margin-top: -40px;
+
+}
+.aparecer{
+    animation: aparecerAnimacao 1s;
+}
+@keyframes aparecerAnimacao{
+    from{
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.imagem {
+    padding: 50px;
+}
+
+.imagem img {
+    width: 90px;
+}
+.clima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D3D3D3;
+}
+
+.temperatura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.temperatura h1 {
+    font-size: 50px;
+}
+
+/*.linha-temp {
+    width: 185px;
+    height: 1px;
+    background-color: #cecece;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+*/
+
+.min-max {
+    margin-left: 30px;
+    margin: auto;
+}
+
+.umidade {
+    margin: 15px auto;
+}
